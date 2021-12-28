@@ -11,34 +11,34 @@
 
 #include "ofc/impl/heapimpl.h"
 
-BLUE_VOID BlueHeapInitImpl (BLUE_VOID)
+OFC_VOID BlueHeapInitImpl (OFC_VOID)
 {
 }
 
-BLUE_VOID BlueHeapUnloadImpl (BLUE_VOID)
+OFC_VOID BlueHeapUnloadImpl (OFC_VOID)
 {
 }
 
-BLUE_LPVOID BlueHeapMallocImpl (BLUE_SIZET size)
+OFC_LPVOID BlueHeapMallocImpl (OFC_SIZET size)
 {
-  BLUE_LPVOID mem ;
+  OFC_LPVOID mem ;
 
   mem = malloc (size) ;
   return (mem) ;
 }
 
-BLUE_VOID BlueHeapCheckAllocImpl (BLUE_LPCVOID mem)
+OFC_VOID BlueHeapCheckAllocImpl (OFC_LPCVOID mem)
 {
 }
 
-BLUE_VOID BlueHeapFreeImpl (BLUE_LPVOID mem)
+OFC_VOID BlueHeapFreeImpl (OFC_LPVOID mem)
 {
   free (mem) ;
 }
 
-BLUE_LPVOID BlueHeapReallocImpl (BLUE_LPVOID ptr, BLUE_SIZET size)
+OFC_LPVOID BlueHeapReallocImpl (OFC_LPVOID ptr, OFC_SIZET size)
 {
-  BLUE_LPVOID mem ;
+  OFC_LPVOID mem ;
 
   mem = realloc (ptr, size) ;
   return (mem) ;
