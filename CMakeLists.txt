@@ -2,12 +2,12 @@ cmake_minimum_required(VERSION 3.21.1)
 project(of_core_cheap VERSION 1.0.1 DESCRIPTION "OpenFiles Core C Heap")
 
 include_directories(
-	${of_core_SOURCE_DIR}/include
+        ${of_core_SOURCE_DIR}/include
 )
 
 set(SRCS
-    src/cheap.c
-    )
+        src/cheap.c
+        )
 
 add_library(of_core_cheap STATIC ${SRCS})
 
