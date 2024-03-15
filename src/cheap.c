@@ -17,6 +17,9 @@ OFC_VOID ofc_heap_init_impl(OFC_VOID) {
 OFC_VOID ofc_heap_unload_impl(OFC_VOID) {
 }
 
+OFC_VOID ofc_heap_unmap_impl(OFC_VOID) {
+}
+
 OFC_LPVOID ofc_malloc_impl(OFC_SIZET size) {
     OFC_LPVOID mem;
 
